@@ -1,0 +1,100 @@
+.login{
+    height: 100vh;
+    .loginContainer{
+        height: calc(100% - 73px);
+
+        .row{
+            display: flex;
+            flex: 6;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            .column{
+                flex: 3;
+                height: 100%;
+
+                .top{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+                    gap: 10px;
+
+                    img{
+                        width: 190px;
+                    }
+                    .logoName{
+                        font-family: Verdana;
+                        font-weight: 600;
+                        color: rgb(3, 46, 138);
+                    }
+                    
+                }
+                .bottom{
+                    margin: 20px;
+                    gap: 30px;
+                    width: 100%;
+                    float: left;
+                    align-items: center;
+                    justify-content: center;
+                    
+            
+                        p{
+                            font-size: 18px;
+                            font-weight: 600;
+                            padding-left: 150px;
+                        }
+
+                    form{
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 20px;
+                        justify-content: baseline;
+                        padding: 20px;
+                        padding-left: 150px;
+        
+                        .formInput{
+                            width: 60%;
+                            height: 80px;
+                            label{
+                                display: flex;
+                                align-items: center;
+                                padding-bottom: 20px;
+                                font-weight: 600;
+                                color: rgb(114, 112, 112);
+                            }
+        
+                            input{
+                                width: 100%;
+                                padding: 5px;
+                                border: none;
+                                border-bottom: 1px solid gray;
+                            }
+                            span{
+                                color: rgb(245, 68, 68);
+                                font-size: 15px;
+                            }
+                        }
+        
+                        .loginButton{
+                            width: 140px;
+                            padding: 10px;
+                            border: none;
+                            background-color: rgb(21, 197, 197);
+                            color: blue;
+                            font-weight: bold;
+                            font-size: 14px;
+                            cursor: pointer;
+            
+                            &:hover{
+                                background-color: rgba(240, 180, 70, 0.842);
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.recent{
+    flex: 1;
+    box-shadow: 7px 6px 8px 2px rgba(230,221,221,1);
+    -webkit-box-shadow: 7px 6px 8px 2px rgba(230,221,221,1);
+    -moz-box-shadow: 7px 6px 8px 2px rgba(230,221,221,1);
+    padding: 10px;
+    border-radius: 10px;
+
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: gray;
+        
+        .title{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    .bottom{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+
+        .table{
+    
+            .status{
+                padding: 5px;
+                border-radius: 5px;
+        
+                &.Approved{
+                    color: green;
+                    background-color: rgba(0, 128, 0, 0.152);
+                }
+                &.Pending{
+                    color: goldenrod;
+                    background-color: rgba(189, 189, 3, 0.102);
+                }
+            }
+        }
+    }
+}
